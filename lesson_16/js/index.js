@@ -44,17 +44,15 @@ document.getElementById('display').innerHTML = addEl(display(n));
 
 // Display counter on the timer monitor
 
-	pointer = 0;
-	count_index.appendChild(document.createTextNode(pointer));
+pointer = 0;
+count_index.appendChild(document.createTextNode(pointer));
 
-function counter(c) {
-	let timerId = setInterval(function() {  
-		for(let i = 0; true; i += 1) {
-			pointer += 1;
-	return pointer;
-		}
+function counter() {
+	let timerId = setInterval(function(){  
+
+		pointer += 1;
+		return pointer;
 	}, 1000);
-return pointer;
 }
 
 

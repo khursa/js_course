@@ -1,1 +1,1 @@
-console.log('Alexander Khursa')
+console.log('Хурса Александр');
