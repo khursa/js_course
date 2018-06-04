@@ -24,9 +24,16 @@
 			<input 
 				type="text"
 				required
+			    id="user_input"
 			    name="user_input"
-				placeholder="Input, please, your date!"
+				placeholder="Input, please, your date in format: dd/mm/yyyy"
 				> 
+				<input 
+					type="submit"
+					id="btn"
+					name="btn"
+					value="Send"
+					> 
 			<p>
 				Days before your date left:
 				<div id="days">
@@ -38,8 +45,12 @@
 	
 <!-- SCRIPTS -->
 	<script
-    	type="text/javascript"
-    	src="dist/main.js">
+		type="text/javascript"
+		src="dist/main.js">
   	</script>
+	<script
+		type="text/javascript"
+		src="date_processing.js">
+	</script>
 </body>
 </html>

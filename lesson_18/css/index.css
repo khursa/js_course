@@ -16,7 +16,7 @@
 
 body {
     font-family: 'montserrat_regular', sans-serif;
-	font-size: 60px;
+	font-size: 48px;
 	text-align: center;
 	background-color: #3695c1;
 	color: #fffeff;
@@ -36,15 +36,19 @@ body {
 
 input {
 	display: block;
+	width: 90%;
 	margin: 150px auto 0;
 	border-radius: 5px;
+}
+
+input[type="submit"] {
+	width: 30%;
 }
 
 input::placeholder,
 input:focus {
 	text-align: center;
 }
-
 
 /* button {
 	margin: 10px;
