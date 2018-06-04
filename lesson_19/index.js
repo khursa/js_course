@@ -1,24 +1,20 @@
-
 'use strict';
 
-let promise = new Promise(function(resolve_1, reject_1) {
- if (!authInfo.isAuth) {
-  reject_1(null);
- } else {
-  resolve_1(
-   setTimeout(function(resolve_2, reject_2) {
-       if ({isAuth: true}) {
-         resolve_2(setTimeout(() => {
-         ( {name: 'Max'} );
-       }, 2000));
-       }
-     }, 2000)
-   );
- }
+let authInfo = {isAuth: true};
+let promise = new Promise(function(resolve_1, reject_1) {  
+    setTimeout(() => {
+        if(!authInfo.isAuth) {
+          reject( null );
+        } else {
+        resolve_1( {name: 'Max'} );
+      }
+    }, 2000);
 });
 
-promise.then((resolve_1) => {
-    console.log(user.name);
- }).catch(() => {
+promise.then(user => {
+    setTimeout(() => {
+        console.log(user.name);
+    }, 2000);
+  }).catch(() => {
 
- });
+});
