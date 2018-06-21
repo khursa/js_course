@@ -11,6 +11,3 @@ console.log(result);
 //         document.getElementById("btn").onclick = someFunc;
 // console.log(someFunc);
 
-// btn.onclick = function() {
-    alert( 'Спасибо' );
-//   };

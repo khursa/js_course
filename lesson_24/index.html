@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>RegExp</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="author" content="Aleksandr Khursa">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<section>
+		<form
+			id="user_message"
+			class="form"
+			name="user_message"
+			action="#"
+			method="get"
+			autocomplete="on"
+				>
+			<fieldset class="form__fieldset">
+				<div class="input__width">
+					<input
+						required
+						type="email"
+						name="email"
+						placeholder="Email address"
+						>
+					<input
+						required
+						type="text"
+						name="subject"
+						placeholder="Phone number"
+							>
+				</div>
+				<textarea
+					required
+					rows="2"
+					from="user_message"
+					name="user_message"
+					minlength="5"
+					maxlength="1000"
+					wrap="soft"
+					>
+				</textarea>
+				<br>
+				<input
+					type="submit"
+					name="submit"
+					value="Find email"
+						>
+			</fieldset>
+		</form>
+	</section>
+<!-- SCRIPTS -->
+	<script
+    	src="js/index.js">
+  	</script>
+</body>
+</html>
