@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+	font-size: 24px;
+	text-align: center;
+	background: #3695c1;
+	background-size: cover;
+	color: #fffeff;
+  	text-shadow: 
+  		   0 1px 0 #ccc, 
+           0 2px 0 #c9c9c9,
+           0 3px 0 #bbb,
+           0 4px 0 #b9b9b9,
+           0 6px 1px rgba(0,0,0,.1),
+           0 0 5px rgba(0,0,0,.1),
+           0 1px 3px rgba(0,0,0,.3),
+           0 3px 5px rgba(0,0,0,.2),
+           0 5px 10px rgba(0,0,0,.55),
+           0 10px 10px rgba(0,0,0,.8),
+           0 20px 20px rgba(0,0,0,.15);
+}
+
+section {
+	padding-top: 80px;
+}
+
+/* FORM */
+
+form {
+	margin-top: 100px;
+    max-width: 939px;
+    margin: 0 auto;
+	padding: 40px;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%,
+										   rgba(0,0,0,0.6) 100%);
+}
+
+.form__fieldset {
+    border: none;
+}
+
+.input__width {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.input__width,
+textarea,
+input[type="submit"] {
+    width: 100%;
+}
+
+input {
+    display: inline-block;
+    width: 45%;
+	padding: 15px 20px 14px;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+
+input::placeholder {
+	font-family: sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+textarea {
+    display: block;
+    height: 100px;
+    resize: none;
+	margin-bottom: 20px;
+	border: 0;
+	border-bottom: 1px solid #fff;
+	background-color: transparent;
+	color: #fff;
+}
+
+input[type="submit"] {
+	background-color:#263889;
+    border-radius: 3rem;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.16px;
+	padding: 22px 0;
+	transition-duration: .2s;
+	border: none;
+	font-size: 24px;
+    box-shadow: -1px 1px 2px black;
+    box-shadow: 0 2px 16px 0 black;
+}
+
+input[type="submit"]:hover {
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    box-shadow: -1px 1px 2px gray;
+    box-shadow: 0 2px 16px 0 gray;
+}
