@@ -1,0 +1,35 @@
+.nav__list {
+    list-style: none;
+}
+
+.nav__list li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 58px;
+}
+
+.nav__list li  a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+	font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f4f5f9;
+    line-height: 52px;
+	vertical-align: middle;
+	transition-duration: color .3s;
+	transition: color .3s;
+}
+
+.nav__list li  a:hover {
+    transition: color .3s;	
+    color: #e74c3c;
+	border-bottom: 1px solid #e74c3c;
+}
+
+#nav__link--active {
+	margin-left: 0;
+    color: #e74c3c;
+    cursor: default;
+	border-bottom: 1px solid #e74c3c;
+}

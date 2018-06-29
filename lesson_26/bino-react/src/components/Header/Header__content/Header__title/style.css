@@ -1,0 +1,44 @@
+.header__title {
+	margin: 45px 0 0 0;
+	font-size: 72px;
+	font-weight: 700;
+	line-height: 78px;
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+    letter-spacing: 7.2px;
+    text-align: center;
+	color: #f4f5f9;
+	animation: enlargement 1.75s ease-in;
+}
+
+@keyframes enlargement {
+	0% {
+		font-size: 62px;
+		opacity: .25;
+	}
+
+	25% {
+		font-size: 64.5px;
+		opacity: .4;
+	}
+
+	50% {
+		font-size: 67px;
+		opacity: .65;
+	}
+
+	75% {
+		font-size: 70px;
+		opacity: .8;
+	}
+
+	95% {
+		font-size: 73px;
+		opacity: .9;
+	}
+
+	100% {
+		font-size: 72px;
+		opacity: 1;
+	}
+}

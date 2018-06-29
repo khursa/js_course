@@ -1,0 +1,31 @@
+.header__circle {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+	margin: 0 auto;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #e74c3c;
+	text-align: center;
+}
+
+.header__circle::before,
+.header__circle::after {
+	content: '';
+	display: block;
+	width: 80px;
+	height: 2px;
+	position: absolute;
+	top: 3px;
+	background: #f1ebe7;
+}
+
+.header__circle::before {
+	right: calc(100% + 14px);
+}
+.header__circle::after {
+	left: calc(100% + 14px);
+}

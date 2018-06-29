@@ -1,0 +1,7 @@
+.header__logo {
+	width: 141px;
+	height: 52px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(./logo.png);
+}
