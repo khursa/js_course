@@ -1,0 +1,39 @@
+.header__anchorbtn {
+	position: absolute;
+	bottom: -5px;
+	left: calc(50% - 37px);
+	width: 74px;
+	height: 74px;
+	background: rgba(255, 255, 255, .25);
+	border-radius: 50%;
+	padding: 5px;
+	border: none;
+	z-index: 1;
+}
+
+.header__anchorbtn div {
+	width: 64px;
+	height: 64px;
+	background: #f4f5f9;
+	border-radius: 50%;
+	margin-bottom: 32px;
+}
+
+.header__anchorbtn svg {
+	width: 22px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+header__anchorbtn::before {
+	border-bottom: 120px solid #fff;
+	border-right: 960px solid transparent;
+	right: 50%;
+}
+
+header__anchorbtn::after {
+	border-bottom: 120px solid #fff;
+	border-left: 960px solid transparent;
+	left: 50%;
+}

@@ -9,25 +9,29 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+	margin: 0 auto;
+	box-shadow: inset 0 -32px 0 0 #ffffff;
 }
 
-header::before,
-header::after {
+.header::before,
+.header::after {
 	content: '';
 	display: block;
 	position: absolute;
-	bottom: 0;
+	bottom: 32px;
 	width: 0;
 	height: 0;
 }
 
-header::before {
+.header::before {
 	border-bottom: 120px solid #fff;
 	border-right: 960px solid transparent;
 	right: 50%;
 }
 
-header::after {
+.header::after {
 	border-bottom: 120px solid #fff;
 	border-left: 960px solid transparent;
 	left: 50%;

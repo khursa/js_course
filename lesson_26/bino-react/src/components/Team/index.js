@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import './style.css'
 
-class COMP extends Component {
+class Team extends Component {
   render() {
     return (
-      <div className="COMP">
+      <div className="team">
         <p>
-          It`s empty component!!!!
+          This component is block "Team"
         </p>
       </div>
     );
   }
 }
 
-export default COMP;
+export default Team;

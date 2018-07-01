@@ -9,6 +9,7 @@
 }
 
 .nav__list li  a {
+    padding-bottom: 19px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
 	font-weight: 700;
@@ -29,7 +30,5 @@
 
 #nav__link--active {
 	margin-left: 0;
-    color: #e74c3c;
     cursor: default;
-	border-bottom: 1px solid #e74c3c;
 }
