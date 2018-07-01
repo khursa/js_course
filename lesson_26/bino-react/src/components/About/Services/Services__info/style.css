@@ -1,12 +1,66 @@
 .services__info {
+    position: relative;
     text-align: right;
+    padding: 0 5%;
 }
 
-.services__text {
+.services__title {
+    margin-top: 150px;
+    color: #f4f5f9;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    border-right: 6px solid #e74c3c;
+    padding-right: 30px;
+}
+
+.services__subtitle {
+    color: #e74c3c;
+    font-family: "Open Sans - Semibold", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.services__text--1, 
+.services__text--2, 
+.services__text--3 {
     max-width: 560px;
     color: #999999;
     font-family: "Source Sans Pro";
     font-size: 14px;
     font-weight: 400;
     line-height: 29px;
+}
+
+.services__text--3 {
+    padding-bottom: 140px;
+}
+
+.services__text--1::after, 
+.services__text--2::after, 
+.services__text--3::after {
+    position: absolute;
+    content: '';
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+    margin-bottom: 32px;
+    transform: translate(50%, -50%);
+    border: 3px solid #585858;
+}
+
+.services__text--3::after {
+    background: #f4f5f9 url(services__icon--monitor.svg) 50% 50% no-repeat;
+}
+
+.services__text--2::after {
+	background: #f4f5f9 url(services__icon--doc.svg) 50% 50% no-repeat;
+}
+
+.services__text--1::after {
+	background: #f4f5f9 url(services__icon--camera.svg) 50% 50% no-repeat;
 }
