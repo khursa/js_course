@@ -3,15 +3,3 @@
     justify-content: space-between;
     background-color: #202020;
 }
-
-.services__title {
-    color: #f4f5f9;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 3.6px;
-    border-right: 6px solid #e74c3c;
-    padding-right: 30px;
-}
-

@@ -1,3 +1,121 @@
 .portfolio {
     text-align: center;
+    margin: 0 auto;
+	max-width: 1366px;
+}
+
+.portfolio__gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.row1,
+.row2 {
+    width: 100%;
+    display: flex;
+}
+
+.box-1-1,
+.box-1-2,
+.box-1-3,
+.box-1-4,
+.box-2-1,
+.box-2-2,
+.box-2-3,
+.box-2-4 {
+    position: relative;
+    height: 480px;
+    width: calc(100% / 4);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.box-1-1 {
+    background: url(./Portfolio__gallery/1.jpg);
+}
+
+
+.box-1-2 {
+    background: url(./Portfolio__gallery/2.jpg);
+}
+
+
+.box-1-3 {
+    background: url(./Portfolio__gallery/3.jpg);
+}
+
+
+.box-1-4 {
+    background: url(./Portfolio__gallery/4.jpg);
+}
+
+.box-2-1 {
+    background: url(./Portfolio__gallery/5.jpg);
+}
+
+
+.box-2-2 {
+    background: url(./Portfolio__gallery/6.jpg);
+}
+
+
+.box-2-3 {
+    background: url(./Portfolio__gallery/7.jpg);
+}
+
+
+.box-2-4 {
+    background: url(./Portfolio__gallery/8.jpg);
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #e74c3c;
+    opacity: 0;
+    transition-duration: all .3;
+}
+
+.overlay:hover {
+    opacity: .8;
+    transition: all .3;
+}
+
+.overlay__info {
+    position: relative;
+}
+
+.overlay__text--main {
+    color: #ffffff;
+    font-family: "Source Sans Pro - Semibold", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 110%;
+}
+
+.overlay__text--main::before {
+    position: absolute;
+    content: '';
+    width: 44px;
+    height: 4px;
+    background-color: #fff;
+    top: 30px;
+    margin-top: 90%;
+}
+
+.overlay__text--secondary {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    text-align: left;
+    margin-left: 50px;
 }
