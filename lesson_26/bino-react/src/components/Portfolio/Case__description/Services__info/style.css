@@ -1,0 +1,50 @@
+.case__info {
+    position: relative;
+    text-align: right;
+    padding: 0 5% ;
+}
+
+.case__title {
+color: #6a6a6a;
+font-family: "Open Sans - Semibold";
+font-size: 18px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 1.35px;
+}
+
+.case__subtitle {
+    color: #e74c3c;
+    font-family: "Open Sans - Semibold", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.case__text--1, 
+.case__text--2, 
+.case__text--3 {
+    max-width: 560px;
+    color: #999999;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.case__text--3 {
+    padding-bottom: 140px;
+}
+
+.decorblock {
+    position: absolute;
+    background-color: #fff;
+    height: 632px;
+    width: 667px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -350%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

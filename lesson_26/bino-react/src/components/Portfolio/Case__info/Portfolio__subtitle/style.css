@@ -1,0 +1,9 @@
+.portfolio__title {
+    padding-top: 130px;
+    color: #6a6a6a;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+}
