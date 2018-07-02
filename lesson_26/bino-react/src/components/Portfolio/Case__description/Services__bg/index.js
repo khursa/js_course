@@ -4,7 +4,7 @@ import './style.css'
 class Services__bg extends Component {
   render() {
     return (
-      <div className="services__bg"></div>
+      <div className="case__bg"></div>
     );
   }
 }

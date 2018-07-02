@@ -7,11 +7,15 @@ class Services__info extends Component {
     return (
       <div className="case__info">
         <div className="decorblock">
+        <div className="icon-relative">
         <Case__icon />
           <Services__title services__title="ACCUMULATE CREATIVE IDEAS"/>
+          <Casse__line/>
           <Services__text1 services__text__1="Lorem Ipsum is simply dummy text of the printing and typesetting let. 
           Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. 
           Lorem Ipsum has been the industry Printing and typelorem Ipsum has been the setting let."/>
+          <Services__link services__link="read more" />      
+          </div>  
         </div>
       </div>
     );
@@ -30,7 +34,7 @@ const Services__title = (props) => {
 const Case__icon = (props) => {
   return (
 
-    <img src={caseicon} />
+    <img  class="case__icon" src={caseicon} />
   )
 }
 
@@ -80,12 +84,20 @@ const Services__text2 = (props) => {
   )
 }
 
-const Services__text3 = (props) => {
+const Services__link = (props) => {
   return (
-     <p className="case__text--3">
-        { props.services__text__3 }     
+     <p className="services__link">
+        { props.services__link }     
     </p>
   )
 }
+
+const Casse__line = (props) => {
+  return (
+     <div className="casse__line">
+    </div>
+  )
+}
+
 
 export default Services__info;
