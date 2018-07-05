@@ -14,7 +14,8 @@ class Services__info extends Component {
           <Services__text1 services__text__1="Lorem Ipsum is simply dummy text of the printing and typesetting let. 
           Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. 
           Lorem Ipsum has been the industry Printing and typelorem Ipsum has been the setting let."/>
-          <Services__link services__link="read more" />      
+          <Services__link services__link="read more" />     
+          <Classsss /> 
           </div>  
         </div>
       </div>
@@ -99,5 +100,28 @@ const Casse__line = (props) => {
   )
 }
 
+
+
+// const handleClik() {
+//   this.setState({
+//     message: "Qq";
+//   })
+// };
+
+// this.state = {
+//   messsage: '';
+// };
+
+const Classsss = (props) => {
+  return (
+     <div className="sss">
+      <button>
+          {/* onClick={this.handleClik.bind(this)} */}
+       Click me!
+       
+        </button>
+    </div>
+  )
+}
 
 export default Services__info;
