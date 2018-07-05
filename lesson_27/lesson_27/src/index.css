@@ -26,7 +26,9 @@ body {
   border-radius: 4px;
   background-color: rgba(210, 227, 238, .25);
   font-size: 60px;
+  font-weight: 700;
   line-height: 72px;
+  letter-spacing: 1.5;
   color: aliceblue;
   box-shadow: -1px 1px 2px black,
                0 2px 16px 0 black;
@@ -46,7 +48,10 @@ body {
 
 .search::placeholder,
 .input_text::placeholder {
-  letter-spacing: normal;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 1.5;
   text-align: center;
   color: #fff;
   text-shadow: 
@@ -89,4 +94,5 @@ body {
 .output {
   width: 49%;
   margin-left: 5%;
+  text-align: center;
 }

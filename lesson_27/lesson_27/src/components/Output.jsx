@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Input_text from './Input_text.jsx';
 
 class Output extends Component {
 
   state = {
-    value: "Input text..."
+    outputText: "Output text"
   };
 
   textOutput() {
-    return {__html: this.state.value};
+    return {__html: this.state.outputText};
   }
 
   render() {
@@ -16,7 +15,7 @@ class Output extends Component {
       <div className="output"
            dangerouslySetInnerHTML={this.textOutput()}
       >
-        
+      
       </div>
     );
   }

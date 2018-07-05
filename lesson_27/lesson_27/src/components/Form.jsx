@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Search from './Search.jsx';
-import Input_text from './Input_text.jsx';
-import Output from './Output.jsx';
+import Search from './Search';
+import InputText from './InputText';
+import Output from './Output';
 
 class Form extends Component {
 
@@ -11,12 +11,12 @@ class Form extends Component {
 
   render() {
     return (
-      <form class="form">
+      <form className="form">
         <Search />
         <div className="input-output">
-          <Input_text updateData={this.updateData} />
+          <InputText sendData={this.getData} updateData={this.updateData} />
           {console.log(this.state)}
-          <Output />
+          <Output value={this.props.value} />
         </div>
       </form>
     );
