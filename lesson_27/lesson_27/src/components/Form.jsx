@@ -14,9 +14,9 @@ class Form extends Component {
       <form className="form">
         <Search />
         <div className="input-output">
-          <InputText sendData={this.getData} updateData={this.updateData} />
+          <InputText updateData={ this.updateData.bind(this) } />
+          <Output value={this.state} />
           {console.log(this.state)}
-          <Output value={this.props.value} />
         </div>
       </form>
     );
