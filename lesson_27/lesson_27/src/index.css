@@ -88,11 +88,12 @@ body {
 
 .input_text {
 	resize: none;
-  width: 49%;
+  width: 50%;
 }
 
 .output {
-  width: 49%;
+  width: 50%;
   margin-left: 5%;
-  text-align: center;
+  text-align: left;
+  word-wrap: break-word;
 }

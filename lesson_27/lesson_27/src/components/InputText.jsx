@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 class InputText extends Component {
   constructor(props) {
     super(props);
-    this.state = {value: null};
+    this.state = {text: null};
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
-    this.props.updateData(this.state.value);
+    this.setState({text: event.target.value});
+    this.props.updateData(this.state.text);
   }
 
   render() {

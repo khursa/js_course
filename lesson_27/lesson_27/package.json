@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jsx-to-string": "^1.4.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-element-to-jsx-string": "^14.0.1",
     "react-scripts": "1.1.4",
     "remarkable-react": "^1.3.1"
   },

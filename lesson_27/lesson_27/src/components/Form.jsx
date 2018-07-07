@@ -4,10 +4,19 @@ import InputText from './InputText';
 import Output from './Output';
 
 class Form extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: ""
+    };
+  };
 
   updateData = (value) => {
-    this.setState({ text: value })
- }
+    this.setState({ 
+      text: value,
+      outputText: value
+    });
+ };
 
   render() {
     return (
@@ -15,8 +24,8 @@ class Form extends Component {
         <Search />
         <div className="input-output">
           <InputText updateData={ this.updateData.bind(this) } />
-          <Output value={this.state} />
-          {console.log(this.state)}
+          <Output value={ this.state.outputText } />
+          { console.log(this.state) }
         </div>
       </form>
     );
