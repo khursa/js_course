@@ -7,9 +7,16 @@ class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: "",
-      searchText: ""
+      // text: "",
+      // searchText: ""
     };
+  };
+
+  searchRequest = (value) => {
+    this.setState({ 
+      search: value,
+      searchText: value
+    });
   };
 
   updateData = (value) => {
@@ -19,15 +26,23 @@ class Form extends Component {
     });
  };
 
-  searchRequest = (value) => {
-    this.setState({ 
-      search: value,
-      searchText: value
-    });
-  };
-
   illumination() {
-    
+    let fullText = this.state.text;
+    let partText = this.state.searchText;
+    let re = new RegExp(partText);
+    let substitution = `<span>${partText}</span>`;
+    let result;
+
+    if ( re.test(fullText) ) {
+      result = fullText.replace(re, substitution);
+
+      this.setState({ 
+        outputText: result,
+        resultText: result
+      });
+    }
+
+    return this.state.outputText
   }
 
   render() {
@@ -39,6 +54,7 @@ class Form extends Component {
           <Output value={ this.state.outputText } />
 
           { console.log(this.state) }
+          {/* { console.log(this.illumination()) } */}
 
         </div>
       </form>
