@@ -21,7 +21,6 @@ class InputText extends Component {
         rows="5"
         required
         >
-
       </textarea>
     );
   }
