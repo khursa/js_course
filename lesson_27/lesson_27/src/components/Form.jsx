@@ -43,6 +43,7 @@ class Form extends Component {
     }
 
     return this.state.outputText
+
   }
 
   render() {
@@ -52,7 +53,7 @@ class Form extends Component {
         <div className="input-output">
           <InputText updateData={ this.updateData.bind(this) } />
           <Output value={ this.state.outputText } />
-
+          
           { console.log(this.state) }
           {/* { console.log(this.illumination()) } */}
 
