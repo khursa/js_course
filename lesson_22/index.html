@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hometask</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="author" content="Alexander Khursa">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/media.css" />
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	
+	<img id="current-icon">
+	<div id="current-weather-details">
+		 <a id="current-humidity">--</a>
+		 <a id="current-pressure">--</a>
+		 <a id="current-uvIndex">--</a>
+		 <img id="temperature-icon">
+		 <a id="current-temperature">--</a>
+		 <a id="current-wind-bearing">--</a>
+		 <a id="current-wind-speed">--</a>  
+		 <button id="getWeather" onclick="getWeather()">Get Current Weather!</button>           
+	</div>
+	<p id="weather-summary"></p>
+   
+
+	
+
+<!-- SCRIPTS -->
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">
+	</script>
+
+	<script
+    	type="text/javascript"
+    	src="js/index.js">
+  	</script>
+</body>
+</html>
